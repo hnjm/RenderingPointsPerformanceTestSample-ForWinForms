@@ -24,10 +24,6 @@ This sample makes use of the following NuGet Package.
 
 [ThinkGeo.MapSuite.Layers.Grids 11.0.0-beta013](https://www.nuget.org/packages/ThinkGeo.MapSuite.Layers.Grids/11.0.0-beta013/)
 
-[ThinkGeo.MapSuite.Layers.Wms 10.2.3](https://www.nuget.org/packages/ThinkGeo.MapSuite.Layers.Wms/10.2.3/)
-
-[ThinkGeo.MapSuite.Layers.WorldStreetsAndImagery 10.2.1](https://www.nuget.org/packages/ThinkGeo.MapSuite.Layers.WorldStreetsAndImagery/10.2.1/)
-
 [ThinkGeo.MapSuite.ProductCenter 11.0.0-beta012](https://www.nuget.org/packages/ThinkGeo.MapSuite.ProductCenter/11.0.0-beta012/)
 
 ### About the Code
