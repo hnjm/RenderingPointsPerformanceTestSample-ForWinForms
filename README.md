@@ -1,0 +1,1 @@
+# RenderingPointsPerformanceTestSample-ForWpf
