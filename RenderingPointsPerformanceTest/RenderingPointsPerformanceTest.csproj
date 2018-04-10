@@ -62,12 +62,6 @@
     <Reference Include="ThinkGeo.MapSuite.Layers.Grids, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
       <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Grids.11.0.0-beta013\lib\net45\ThinkGeo.MapSuite.Layers.Grids.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Wms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Wms.10.2.3\lib\net45\ThinkGeo.MapSuite.Layers.Wms.dll</HintPath>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.WorldStreetsAndImagery, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.WorldStreetsAndImagery.10.2.1\lib\net45\ThinkGeo.MapSuite.Layers.WorldStreetsAndImagery.dll</HintPath>
-    </Reference>
     <Reference Include="ThinkGeo.MapSuite.ProductCenter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
       <HintPath>..\packages\ThinkGeo.MapSuite.ProductCenter.11.0.0-beta012\lib\net45\ThinkGeo.MapSuite.ProductCenter.exe</HintPath>
     </Reference>
