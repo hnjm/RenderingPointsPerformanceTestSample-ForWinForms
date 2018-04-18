@@ -1,9 +1,9 @@
 # Rendering Points Performance Test Sample for WinForms
 
 ### Description
-1. In Map Suite, a shape (a shape object inherited from the BaseShape class such as PointShape, LineShape, etc) is heavier than a feature. You can treat a feature as a holder of a byte array (Well Known Binary), it’s light weight and doesn’t have too many methods to manipulate its core data (Well Known Binary). Shape however is heavy, it provides all the info as well as methods against the data.  You can cast from a Feature to a shape and vice versa.
+1. In Map Suite, a shape (a shape object inherited from the BaseShape class such as PointShape, LineShape, etc) is heavier than a feature. You can treat a feature as a holder of a byte array (Well Known Binary), it’s lightweight and doesn’t have too many methods to manipulate its core data (Well Known Binary). Shape however is heavy, it provides all the info as well as methods against the data.  You can cast from a Feature to a shape and vice versa.
  
-1. To update a feature, usually we need to convert a feature to a shape, update the shape and then convert it back to a feature. This will create a new shape and a new feature, which is more straightforward but the cost is high. Below is a method updating a point feature by adding 1 to its X and Y
+1. To update a feature, usually, we need to convert a feature to a shape, update the shape and then convert it back to a feature. This will create a new shape and a new feature, which is more straightforward but the cost is high. Below is a method updating a point feature by adding 1 to its X and Y.
 
 ```csharp
        private void UpdateFeatureThroughShape(Feature feature)
@@ -16,7 +16,7 @@
         }
 ```
 
-3. You can update a feature by directly updating its WKB. The following method updates a point feature by adding 1 to its X and Y. It’s the most efficient way where we manipulate a byte array without creating any new object. It is not straightforward and you need to have a deep understanding about the format of WKB. That’s what we are doing in this sample. We will add more APIs to Feature to make it straightforward and efficient.
+3. You can update a feature by directly updating its WKB. The following method updates a point feature by adding 1 to its X and Y. It’s the most efficient way where we manipulate a byte array without creating any new object. It is not straightforward and you need to have a deep understanding of the format of WKB. That’s what we are doing in this sample. We will add more APIs to Feature to make it straightforward and efficient.
 
 ```csharp
        private void UpdateFeatureThroughWKB(Feature feature)
