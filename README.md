@@ -1,8 +1,8 @@
 # Rendering Points Performance Test Sample for WinForms
 
 ### Description
-This sample shows you how to render points in Map Suite Desktop (ForWinForms) Edition. 
-By manipulating the follwoing two options, the points will be rendered differently. 
+This sample shows you how to render points in Map Suite Desktop (WinForms) Edition. 
+By manipulating the following two options, the points will be rendered differently. 
  - **Point Count**
  - **Grid Size in Pixel**
  
