@@ -27,12 +27,16 @@ namespace RenderingPointsPerformanceTest
             timer.Interval = 500;
             timer.Tick += RefreshPointLayer;
 
-            winformsMap1.MapUnit = GeographyUnit.DecimalDegree;
-            winformsMap1.Overlays.Add(new WorldStreetsAndImageryOverlay());
+            winformsMap1.MapUnit = GeographyUnit.Meter;
+            winformsMap1.ZoomLevelSet = ThinkGeoCloudMapsOverlay.GetZoomLevelSet();
+
+            ThinkGeoCloudMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudMapsOverlay();
+            winformsMap1.Overlays.Add(thinkGeoCloudMapsOverlay);
+
             layerOverlay = new LayerOverlay();
             winformsMap1.Overlays.Add(layerOverlay);
 
-            winformsMap1.CurrentExtent = new RectangleShape(-115.48, 47.95, -90.26, 32.33);
+            winformsMap1.CurrentExtent = new RectangleShape(-12855175, 6098541, -10047697, 3806707);
             winformsMap1.Refresh();
         }
 
@@ -45,7 +49,7 @@ namespace RenderingPointsPerformanceTest
                 foreach (Feature feature in ((CustomInmemoryFeatureLayer)selectedLayer).InternalFeatures)
                 {
                     byte[] bytes = feature.GetWellKnownBinary();
-                    UpdateWkb(bytes, 0.2);
+                    UpdateWkb(bytes, 20000);
                     feature.SetWellKnownBinary(bytes);
                 }
             }
@@ -65,7 +69,7 @@ namespace RenderingPointsPerformanceTest
             pointFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
 
             Random random = new Random();
-            RectangleShape testExtent = new RectangleShape(-115.48, 47.95, -90.26, 32.33);
+            RectangleShape testExtent = new RectangleShape(-12855175, 6098541, -10047697, 3806707);
             double pointCount = Convert.ToDouble(pointCountTextBox.Text);
             for (int i = 0; i < pointCount; i++)
             {
@@ -79,7 +83,7 @@ namespace RenderingPointsPerformanceTest
             layerOverlay.Layers.Clear();
             layerOverlay.Layers.Add(pointFeatureLayer);
 
-            winformsMap1.CurrentExtent = new RectangleShape(-115.48, 47.95, -90.26, 32.33);
+            winformsMap1.CurrentExtent = new RectangleShape(-12855175, 6098541, -10047697, 3806707);
             winformsMap1.Refresh();
         }
 

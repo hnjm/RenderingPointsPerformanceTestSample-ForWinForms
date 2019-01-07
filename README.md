@@ -33,20 +33,18 @@
 4. The “Grid size in Pixel” textbox let you set the size of the grid in which up to one point can be displayed, the bigger the grid is, the more sparse the points will be. This is an optimization with which we can avoid showing too many points on the map.  Play with it and you can see the performance differences.
 
 
-Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf) for the details.
+Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_winforms) for the details.
 
-![Screenshot](https://github.com/ThinkGeo/RenderingPointsPerformanceTestSample-ForWinForms/blob/master/Screenshot.png)
+![Screenshot](https://github.com/ThinkGeo/RenderingPointsPerformanceTestSample-ForWinForms/blob/master/Screenshot.gif)
 
 ### Requirements
 This sample makes use of the following NuGet Package.
 
-[MapSuiteDesktopForWinForms-BareBone 10.2.8](https://www.nuget.org/packages/MapSuiteDesktopForWinForms-BareBone/10.2.8/)
+[MapSuiteDesktopForWinForms-BareBone 10.4.1](https://www.nuget.org/packages/MapSuiteDesktopForWinForms-BareBone/10.4.1)
 
-[ThinkGeo.MapSuite 11.0.0-beta060](https://www.nuget.org/packages/ThinkGeo.MapSuite/11.0.0-beta060/)
+[ThinkGeo.MapSuite 10.4.0](https://www.nuget.org/packages/ThinkGeo.MapSuite/10.4.0)
 
-[ThinkGeo.MapSuite.Layers.Grids 11.0.0-beta013](https://www.nuget.org/packages/ThinkGeo.MapSuite.Layers.Grids/11.0.0-beta013/)
-
-[ThinkGeo.MapSuite.ProductCenter 11.0.0-beta012](https://www.nuget.org/packages/ThinkGeo.MapSuite.ProductCenter/11.0.0-beta012/)
+[ThinkGeo.MapSuite.Layers.Grids 10.4.0](https://www.nuget.org/packages/ThinkGeo.MapSuite.Layers.Grids/10.4.0)
 
 ### About the Code
 
@@ -89,10 +87,10 @@ This sample makes use of the following NuGet Package.
 
 ### Getting Help
 
-- [Map Suite Desktop for Wpf Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf)
-- [Map Suite Desktop for Wpf Product Description](https://thinkgeo.com/ui-controls#desktop-platforms)
+- [Map Suite Desktop for WinForms Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_winforms)
+- [Map Suite Desktop Product Description](https://thinkgeo.com/desktop)
 - [ThinkGeo Community Site](http://community.thinkgeo.com/)
-- [ThinkGeo Web Site](http://www.thinkgeo.com)
+- [ThinkGeo Web Site](https://www.thinkgeo.com)
 
 
 ### About Map Suite
